@@ -44,7 +44,26 @@ body {
     padding: 5px;
 }
 
-#cha_options h3, h4 {
+#k_main ul {
+    background: #514754;
+    width: 20%;
+    padding: 7px;
+    border-bottom: solid 1px #0e0910;
+    border-top: solid 1px #0e0910;
+}
+
+#k_main ul li {
+    background: #222123;
+    font-size: .90em;
+    width: 80%;
+    margin-bottom: 5%;
+    margin-left: -7px;
+    padding: 2% 2% 2% 4%;
+    border-radius: 0 8px 8px 0;
+    display: inline-block;
+}
+
+h2, h3, h4 {
     width: 20%;
     background: #222123;
     padding: 7px;
