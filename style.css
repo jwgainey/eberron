@@ -45,10 +45,7 @@ body {
     padding: 5px;
 }
 
-#k_main ul,
-#w_main ul,
-#mo_main ul,
-#my_main ul {
+.info_li ul {
     background: #514754;
     width: 20%;
     padding: 7px;
@@ -56,10 +53,7 @@ body {
     border-top: solid 1px #0e0910;
 }
 
-#k_main ul li,
-#w_main ul li,
-#mo_main ul li,
-#my_main ul li {
+.info_li ul li {
     background: #222123;
     font-size: .90em;
     width: 80%;
