@@ -75,3 +75,14 @@ h2, h3, h4 {
     border-radius: 0 0 20px 0;
 }
 
+th {
+    background: #222123;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+}
+
+td {
+    background: #514754;
+    margin: 2px;
+    padding: 2px;
+}
