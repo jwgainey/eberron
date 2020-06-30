@@ -10,7 +10,8 @@ body {
     color: #aaa;
 }
 
-.infoBlock {
+.infoBlock,
+#h_main p {
     background: #222123;
     width: 70%;
     margin-bottom: 30px;
@@ -44,7 +45,10 @@ body {
     padding: 5px;
 }
 
-#k_main ul {
+#k_main ul,
+#w_main ul,
+#mo_main ul,
+#my_main ul {
     background: #514754;
     width: 20%;
     padding: 7px;
@@ -52,7 +56,10 @@ body {
     border-top: solid 1px #0e0910;
 }
 
-#k_main ul li {
+#k_main ul li,
+#w_main ul li,
+#mo_main ul li,
+#my_main ul li {
     background: #222123;
     font-size: .90em;
     width: 80%;
@@ -69,5 +76,8 @@ h2, h3, h4 {
     padding: 7px;
     border-radius: 0 20px 0 0;
     border-bottom: solid 1px #0e0910;
+}
+.bottomTag  {
+    border-radius: 0 0 20px 0;
 }
 
