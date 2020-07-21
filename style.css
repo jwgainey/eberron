@@ -102,26 +102,51 @@ td {
 
 /*nav */
 
-.nav-2 {
+ a {
+    text-decoration: none;
+    color: #aaa;
+}
+.nav-2 li{
     text-align: right;
     list-style-type: none;
     display: inline;
 }
 .main_nav {
-    float: right;
     text-align: right;
-    background-position-x: 30%;
+    position: fixed;
+    top:30%;
+    left: 90%;
+    margin-right: 5px;
+    
 }
+
 .main_nav ul li {
     list-style-type:none;
     background: #222123;
-    width: 30%;
     margin-bottom: 5px;
     padding: 3px;
-    line-height: .85em;
-    font-size: .75em;
-    border-radius: 20%;
     
+    font-size: 1em;
+    border-radius: 10%;
+}
+
+.main_nav .arrow {
+    border-radius: 100%;
+    text-align: center;
+}
+
+/* animations */
+@keyframes link {
+    from {
+        width: 100%; padding: 5px;
+    }
+    to {
+        width: 150%; padding: 15px;
+    }
+}
+.main_nav ul li:hover {
+    animation: link linear ;
+
 }
 
 /*forms */
