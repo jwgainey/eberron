@@ -33,9 +33,9 @@ header {
     line-height: 1.5em;
 }    
 
-.infoBlock, aside{
+/* .infoBlock, aside{
     box-shadow: 10px 10px 15px #aaa;
-}
+} */
 
 aside {
     background: #222123;
