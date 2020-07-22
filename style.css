@@ -20,7 +20,7 @@ header {
     margin-top: 0;
     margin-bottom: 20px;
     padding: 10px;
-    
+    border-bottom: 3px solid lightblue;
 }
 
 .infoBlock,
@@ -32,6 +32,10 @@ header {
     border-radius: 0 20px 20px 0;
     line-height: 1.5em;
 }    
+
+.infoBlock, aside{
+    box-shadow: 10px 10px 15px #aaa;
+}
 
 aside {
     background: #222123;
@@ -78,6 +82,10 @@ h2, h3, h4 {
     border-bottom: solid 1px #0e0910;
 }
 
+
+h2 {
+    font-size: 1.5em;
+}
 /* tables */
 .bottomTag  {
     border-radius: 0 0 20px 0;
@@ -107,12 +115,13 @@ td {
     color: #aaa;
 }
 .nav-2 li{
-    text-align: right;
     list-style-type: none;
     display: inline;
+    margin: 10px;
+    
 }
 .main_nav {
-    text-align: right;
+    text-align: center;
     position: fixed;
     top:30%;
     left: 90%;
