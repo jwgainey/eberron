@@ -53,6 +53,10 @@ aside h4 {
     display: inline;
 }
 
+.bottomTag  {
+    border-radius: 0 0 20px 0;
+}
+
 
 .info_li ul {
     background: #514754;
@@ -87,9 +91,7 @@ h2 {
     font-size: 1.5em;
 }
 /* tables */
-.bottomTag  {
-    border-radius: 0 0 20px 0;
-}
+
 
 th {
     background: #222123;
@@ -101,6 +103,7 @@ td {
     background: #514754;
     border: solid 1px #222123;
     padding-left: 3px;
+    padding-right: 3px;
 }
 
 .tr-2 td{
