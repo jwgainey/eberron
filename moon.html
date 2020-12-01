@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Eberron Campaign</title>
+    <title>Eberron - Moons</title>
 </head>
 <body>
     <div class="container-fluid p-0">
@@ -18,7 +18,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav text-uppercase mx-auto">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Home <span class="sr-only"(current)></span></a>
+                            <a href="index.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Home</span></a>
                         </li>
                         <li class="nav-item">
                             <a href="setting.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Campaign Setting</a>
@@ -27,7 +27,7 @@
                             <a href="world.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">World of Eberron</a>
                         </li>
                         <li class="nav-item">
-                            <a href="moon.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Moons &amp; Planes</a>
+                            <a href="moon.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Moons &amp; Planes  <span class="sr-only"(current)></span></a>
                         </li>
                         <li class="nav-item">
                             <a href="myths.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Myths &amp; Religions</a>
@@ -40,21 +40,25 @@
             </div>
         </nav><!--End of Navigation-->
 
-        <section class="info_li"
-            <h2>The Moons of Eberron</h2>
+        <section id="moons" class="px-4 px-lg-0">
+            <h2 class="text-center">The Metascape of Eberron</h2><br>
             <div class="infoBlock">
                 <p>
-                    Similarly to baseline DnD, existence is made up of intersecting metaphysical planes. Unlike baseline,
-                    They do not cleanly line up with the four elements or alignments, or even deities. There are twelve
+                    Like most settings, existence is made up of intersecting metaphysical planes. As written, they are pretty much just renamed
+                    planes from the other settings. So Ive made so that they
+                    do not cleanly line up with the four elements or alignments, or even deities. This ranges between a plane aligning 
+                    with multiple elements or metaphysical concepts. There are twelve
                     moons believed to be physical projections of the planes that make up the universe with one  
-                    additional plane related to dreaming. In general, when using names, the moon and plane can be used interchangeably.
-                    It is currently unknown, aside from distant observation, what the moons are actually like, with only very little documentation
-                    of interplanar travel found left behind by the Giants. Everything known from modern sources
-                    come from observations on their orbits around Eberron, or their effects on Manifest Zones throughout 
-                    the world. 
+                    additional plane related to dreaming. In general, when using names, the moon and plane can be used interchangeably, they technically have
+                    different names, but I'm not keeping up with that. In addition, I rule that the 'plane' is simply the energy, and the moon itself is the 
+                    physical embodiment. So say you cast a fire spell, the energy comes from the plane; the energy field, while if you plane shift to Fernia,
+                    it will be a physical place HEAVILY influenced by fire instead of a physical pocket within the concept of fire.
                 </p><br>
                 <p>
-                    Manifest Zones are areas ranging between the size of a small village up to possibly the size of an entire continent 
+                    Most information about the moons come from accounts of the Giants, who were able to move across them at level not seen today. Much of this 
+                    information is seen as highly fantastical, being that researchers are only able to observe their elemental associations by their orbit. The 
+                    orbits have a great impact on Manifest Zones across all of Eberron. 
+                    These zones are areas ranging between the size of a small village up to the size of an entire continent 
                     that are heavily affected by a particular moon. In general, their effects can ebb and flow with time, but some 
                     appear to be permanent, or at the very least exhibit a low, constant effect. Somewhat related, the moons' position 
                     in orbit and its lunar cycle can have effects similar to a manifest zone on a greater scale. Scientific study of these areas have 
@@ -62,267 +66,486 @@
                 </p><br>
                 <p>
                     The lunar cycles can also have a direct impact on the way some living beings are born. Some of the moons are 
-                    responsible for the planetouched races such as Genasi, Tieflings, and Aasimar, which tends to only affect that particular
+                    responsible for the planetouched races such as Genasi, Tieflings, and Aasimar. This tends to only affect that particular
                     child, although sensitivity to particular moons seem to run in lineages. Although there are constellation in the sky,  it is the 
                     moons that are used as a sort of zodiac system or for divination. In fact, very little is known about 
                     the stars due to the overwhelming presence of twelve moons in comparison. Some myths state that each of the Progenitor Wyrms
                     created these moons before joining to become the planet Eberron.
+                    Also included are aspects of the world itself.
                 </p>
+            </div>
+        
+
+            <hr>
+            <h2 class="text-center">The Moons and Other Bodies</h2><br>
+            <div id="moonCards" class="row equal-height">
+                <!--irian card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/aaron-burden-BTubi6qaY6Q-unsplash.jpg" alt="Irian" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Irian</h5>
+                            <p class="card-text">Positive Energy</p>
+                            <p class="card-text">Light</p>
+                            <p class="card-text">Life</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#irianModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--irian modal-->
+                <div class="modal" id="irianModal" tabindex="-1" role="dialog" aria-labelledby="irianModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="iranModalLabel">Irian: the Eternal Dawn</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This moon functions as the setting's sun. By comparison it is much larger compared to the other moons, close to the size of Eberron itself. It is the largest source of light for the world, but not its heat. Its manifest zones cause the ground to be extremely fertile, sometimes allowing multiple harvests a year. It is believed by some to have associations with the Couatl of legend. Healing and restoration magic is also much stronger here, while necromancy tends to be less effective.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Siberys Ring</h2>
-                <div class="infoBlock">
-                    <p>
-                        Not actually a moon, but it is the closest heavenly body to Eberron. Named after and in myth believed to be the 
-                        shattered remains of the dragon, Siberys. The ring is made from Siberys dragonshards, and is believed by 
-                        some to be the reason magic is even possible within the world to begin with.
-                    </p>
+                <!--fernia card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/steve-halama-6twzYVHRurY-unsplash.jpg" alt="Fernia" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fernia</h5>
+                            <p class="card-text">Fire</p>
+                            <p class="card-text">Law</p>
+                            <p class="card-text">Heat</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#ferniaModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--fernia modal-->
+                <div class="modal" id="ferniaModal" tabindex="-1" role="dialog" aria-labelledby="ferniaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="iranModalLabel">Fernia: the Sea of Fire</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This moon is the second brightest in the sky, functioning as a sort of second sun. Most heat in the world is geothermal, but is highly regulated by Fernia, likewise, summer cycles are closely related to its orbit. Manifest zones typically result in deserts in the middle of otherwise fertile lands. Some zones also have the strange effect of preventing creatures from lying, or disabling illusions. Documentation from Giant contact relates this esoteric effect to the Devils and Angels that make their home here. Fire magic and magic relating to the truth or dispelling other magic works better, while magic related to the cold or deceptions tends to fail more frequently.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-                
-                <h2>Irian</h2>
-                    <ul>
-                        <li>Positive Energy</li>
-                        <li>Life/Light</li>
-                        <li>Siberys</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This moon functions as the setting's sun. By comparison it is much larger compared to the other moons,
-                        possibly close to the size of Eberron itself. It is the largest source of light for the world, but not heat.
-                        Very little is known about the moon itself even from Giant research. Its manifest zones are found most often 
-                        in Aundaire, The Eldeen Reaches and the Talentia Plains. Creatures born during its height are often perfectly 
-                        healthy and tend to be stronger than others of similar age, but that tends to wear out later in life. The ground
-                        is extremely fertile, and crops seem to grow much faster, sometimes allowing multiple harvests in a single season.
-                        Healing and restoration magic is also much stronger here, while necromancy tends to be less effective.
-                    </p>
+                <!--syrania card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/joel-holland-TRhGEGdw-YY-unsplash.jpg" alt="Syrania" class="card-img-top img-height img-hight" style="height: 10rem">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Syrania</h5>
+                            <p class="card-text">Air</p>
+                            <p class="card-text">Gravity</p>
+                            <p class="card-text">Peace</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#syraniaModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--syrania modal-->
+                <div class="modal" id="syraniaModal" tabindex="-1" role="dialog" aria-labelledby="syraniaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="syraniaModalLabel">Syrania: the Azure Sky</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>According to Giant texts, much travel took place to this plane ages ago. It is described as endless fields with consistently perfect weather, never reaching night, only twilight at its darkest. Manifest Zones are fairly rare with the only documented areas being Sharn and a forest in Arenal. Wind and air magic, alongside magic that effects gravity sees more potential and creatures have an easier time resisting magic that forces them to act against their will.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Fernia</h2>
-                    <ul>
-                        <li>Fire</li>
-                        <li>Order/Summer</li>
-                        <li>Kyber</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This moon is the second brightest in the sky, functioning as a sort of second sun. Most heat in the world is geothermal, but 
-                        Fernia seems to also regulate
-                        it somewhat, with summer cycles being closely related to its orbit. Manifest zones typically result in deserts in the middle 
-                        of otherwise fertile fields. Some zones also have the strange effect of preventing creatures from lying, or dispelling illusions.
-                        From Giant documentation on the moon, it is believed that certain tribes of Devils and Angels living there are responsible for this
-                        more esoteric effect. Fire magic and magic relating to the truth or dispelling other magic works better, while magic related to 
-                        the cold or deceptions tends to fail more frequently.
-                    </p>
+                <!--thelanis card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/ryk-porras-AZ8-ciy70JA-unsplash.jpg" alt="Thelanis" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Thelanis</h5>
+                            <p class="card-text">Fae</p>
+                            <p class="card-text">Seasons</p>
+                            <p class="card-text">Stories</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#thelanisModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--thelanis modal-->
+                <div class="modal" id="thelanisModal" tabindex="-1" role="dialog" aria-labelledby="thelanisModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="thelanisModalLabel">Thalanis: the Faerie Court</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p> Home to the Fae, the related zones are rarely interacted with anyone other than druidic sects, who typically keep these locations secret. It can be infered that this is a source of their powers. The Archfey have near total control over the plane, and through this, the manifest zones as well. There are many stories of pockets of wood having a different season than the surrounding area, and some even having a completely different flow in time. Effects that charm or dazzle have a much stronger sway under Thalanis' influence as well as making magic in general more difficult to dispel or counter.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Syrania</h2>
-                    <ul>
-                        <li>Air</li>
-                        <li>Peace/Gravity</li>
-                        <li>Eberron</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        According to Giant texts, some travel took place to this plane ages ago. It is described as endless fields with constantly
-                        perfect weather, never reaching night, only twilight at its darkest. It is here that the floatwood trees used in 
-                        airship construction is harvested from originates. Manifest zones vary a bit compared to others, with one in Arenal
-                        being the only place in Eberron that allows floatwood growth, and the one where Sharn is located, altering the gravity, 
-                        enabling it be to be built as high as it is. Some smaller zones also house idyllic villages that seem to have avoided the worst effects
-                        of the Last War. Wind and air magic, alongside magic that effects gravity sees more potential and creatures have an easier time
-                        resisting magic that forces them to act against their will.
-                    </p>
+                <!--lamannia card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/mike-erskine-FL_pywMch1k-unsplash.jpg" alt="Lamannia" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lamannia</h5>
+                            <p class="card-text">Wilds</p>
+                            <p class="card-text">Lycanthropy</p>
+                            <p class="card-text">Primal Energy</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#lamanniaModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="lamanniaModal" tabindex="-1" role="dialog" aria-labelledby="lamanniaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="lamanniaModalLabel">Lamannia: the Twilight Forest</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>It is widely believed that the lycanthropic curse originated from this wild plane of existence. Also home to some of the wilder, darker Fae, Lamannia houses all manner of beasts, some long thought to be extinct. Primal elementals are also commonly summoned from this realm, as they have a slightly weaker connection to it compared to one of their own element. It is also believed to be a source of power for the inhuman rage of barbarians. Conjuration magic is much easier to perform under its influence as well as enhancing certain magical non-spell abilities. Magic that has little to with the primal forces of nature or destruction find themselves easier to be resisted however.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Risia</h2>
-                    <ul>
-                        <li>Ice/Lightning</li>
-                        <li>Winter/Storms</li>
-                        <li>Kyber</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        Another plane that the Giants seem to have made some contact with. The land is mostly frozen and besieged in constantly raging
-                        storms. It is believed that the entire continent of Everice is a manifest zone of Risia and Stormhome is the result of a much smaller, weaker
-                        one. Watching its position in the sky in relation to Fernia and Syrania allows experts to fairly accuratly predict the weather and 
-                        how long or harsh a coming winter will be. Due to most manifest zones taking place over the ocean or on a inhospitable continent,
-                        it is not known what magic, other than cold, electric, and wind are effected. 
-                    </p>
+                <!--risia card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/layne-lawson-2uOcrLACf_4-unsplash.jpg" alt="Risia" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Risia</h5>
+                            <p class="card-text">Ice</p>
+                            <p class="card-text">Lightning</p>
+                            <p class="card-text">Fortitude</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#risiaModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--risia modal-->
+                <div class="modal" id="risiaModal" tabindex="-1" role="dialog" aria-labelledby="risiaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="risiaModalLabel">Risia: the Freezing Tempest</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Another plane that the Giants seem to have made much contact with. The land is mostly frozen and besieged in constantly raging storms. It is believed that the entire continent of Everice is a manifest zone of Risia. Watching its position in the sky in relation to Fernia and Syrania allows experts to fairly accurately predict the weather and how long or harsh a coming winter will be. Due to most manifest zones taking place over the ocean or on a inhospitable continent, it is not known what is affected other than the associated elemental eneries.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Thelanis</h2>
-                    <ul>
-                        <li>Fey</li>
-                        <li>Seasons/Emotions</li>
-                        <li>Eberron</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        Manifest zones of this moon tend to occurs far from civilization, with druid sects only coming across them rarely. Large, sprawling forests 
-                        grow around these zones as well, making the directly affected zone even more difficult to locate. It is however known, that these forests 
-                        often act under the influence of their own weather and seasonal patterns, with each season sometimes lasting years on end. Some druids have 
-                        also reported heightened emotions and senses when nearing some of the smaller or temporary zones. Some myths tell of strange creatures native 
-                        to the plane who are the ones actually controlling the climate, but are notoriously fickle to deal with. Charms and enchantment magic work much better
-                        during the moon's zenith, while 'buffs' do not work as well.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/alvaro-hernandez-M-Um7iwTkFU-unsplash.jpg" alt="Savarath" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Shavarath</h5>
+                            <p class="card-text">War</p>
+                            <p class="card-text">Violence</p>
+                            <p class="card-text">Destruction</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#shavarathModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="shavarathModal" tabindex="-1" role="dialog" aria-labelledby="shavarathModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="shavarathModalLabel">Shavarath: the Battleground</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This plane is commonly associated with acts of war and violence. Manifest zones only develop in large-scale battlefields with combating Fiends and Angels sometimes being spotting in these areas. It is a common superstition that weapons forged on battlegrounds are much deadlier, but they can become cursed or even sentient weapons. Alongside Lamannia, it is also believed that barbarians get their superhuman physical abilities from this plane. In general, weapons or otherwise physical attacking does greater damage, while non-damaging spells have a harder time taking hold.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-    
-                <h2>Lamannia</h2>
-                    <ul>
-                        <li>Lycanthropy</li>
-                        <li>Strenght/The Wild</li>
-                        <li>Eberron</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        Believed to be the source of lycanthropy, due to some Fey influences and the fact that it is in its full state far more often than the 
-                        other moons are. (Barring Irian, which is always 'full'.) These zones are rather hard to study, due to seemingly only appearing 
-                        far from civilization, with even the druids having difficulty finding them. It is believed that Lamannia gives barbarians some of their 
-                        supernatural ability alongside the moon Shavarath. Like Thelanis, study is primarily drawn from surrounding wilderness rather than directly.
-                        It is inferred from the moon's positions that Lammania makes magic that changes the body or senses work better and longer, and makes mind
-                        affecting magic struggle to take hold.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/giorgio-parravicini-12IHVEFRacQ-unsplash.jpg" alt="Daanvi" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Daanvi</h5>
+                            <p class="card-text">Order</p>
+                            <p class="card-text">Magic</p>
+                            <p class="card-text">Innovation/Stagnation</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#daanviModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="daanviModal" tabindex="-1" role="dialog" aria-labelledby="daanviModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="daanviModalLabel">Daanvi: the Perfect Order</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This is one of the few planes with very little information, due mostly to its very long orbit, nearly 1000 years! It is thought that each cycle has brought a new age of technology or a rise between different species. Of course, civilization still improves and changes even without Daanvi's presence, but it also cannot be ignored that the greatest jumps are when it is near. It is also said that the dragonmarksfirst started appearing during one of Daanvi's zeniths. Its manifest zones are rather subtle compared to others, but in particular, ritual or enchanting magic seems to gain the most effects. It is also theorized that 'null zones', where magic is largely unable to function,are a type of manifest zone of Daanvi.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Daanvi</h2>
-                    <ul>
-                        <li>Knowlege</li>
-                        <li>Magic/Innovation</li>
-                        <li>Siberys</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This is one of the few planes with very little information from the Giants, due mostly to its very long orbit, nearly 1000 years! It is 
-                        thought that each cycle has brought a new age of technology or a rise between different species. Of course, civilization still improves and changes 
-                        even without Daanvi's presence, but it also cannot be ignored that the greatest jumps are when it is near. It is also said that the dragonmarks
-                        first started appearing during one of Daanvi's zeniths. Its manifest zones are rather subtle compared to others, but in particular, ritual or 
-                        enchanting magic seems to gain the most effects. It is also theorized that a few 'null zones', where magic is largely unable to function,
-                        are a type of manifest zone of Daanvi.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/zetong-li-VAT6XKKwaIE-unsplash.jpg" alt="Kythri" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kythri</h5>
+                            <p class="card-text">Chaos</p>
+                            <p class="card-text">Magic</p>
+                            <p class="card-text">Fluidity</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#kythriModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="kythriModal" tabindex="-1" role="dialog" aria-labelledby="kythriModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="kythriModalLabel">Kythri: the Churning Chaos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This strange, apparently liquid, moon seems to have no orbit at all, either wildly flailing across the sky or sometimes appearing in a difference section of space from night to night. It is because of this that it is believed that all magic involving transporting matter is energized by this particular moon. Transmutation and conjuration magic tend both are stronger and last longer under the effects of this moon. Dispelling and other abjuration effects aren't quite as useful as normal. If a manifest zone appears near or even within another pre-existing zone, magic fluctuates wildly and is rather unpredictable. It should be noted that to date, no Kythri zone has interacted with a Daanvi zone.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Kythri</h2>
-                    <ul>
-                        <li>Transmutation/Dimensional</li>
-                        <li>Change/Ooze</li>
-                        <li>Eberron</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This strange moon seems to have no orbit at all, either wildly flailing across the sky or sometimes appearing in a difference section of space 
-                        from night to night. It is because of this that it is believed that all magic involving transporting matter is energized by this particular moon.
-                        Manifest zones are also unstable, but in a much different way. Interestingly, through clever tracking procedures and some luck, researchers discovered
-                        that this moon is completely liquid, although the exact material is still unknown. The ground in its manifest zones are pliable by the sheer will of individuals within. This
-                        effect may have lead to the beginnings of transmutation magic. Thankfully, most of these zones are temporary and as of yet, has not happened in any 
-                        major population area. Transmutation and conjuration magic tend both act quicker and last longer under the effects of this moon. Dispelling and other 
-                        abjuration effects aren't quite as useful as normal. If a manifest zone appears near or even within another pre-existing zone, magic fluctuates wildly
-                        and is rather unpredictable. It should be noted that to date, no Kythri zone has interacted with a Daanvi zone.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/tanya-nevidoma-oWI6Li7xcj4-unsplash.jpg" alt="Dolurrh" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dolurrh</h5>
+                            <p class="card-text">Positve/Negative Energy</p>
+                            <p class="card-text">Death</p>
+                            <p class="card-text">Salt</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#dolurrhModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="dolurrhModal" tabindex="-1" role="dialog" aria-labelledby=dolurrhModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="dolurrhModalLabel">Dolurrh: the Realm of the Dead</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The land of the dead. Other than the very pious, it seems that all souls go here after expiring. Shades of mortals wander the empty fields and valleys until they fade away, believed by some to be reincarnated soon after. Due to its unique mixture of positive and negative energy, true resurrection is channeled from this plane. Undead created from this plane tend to be the harmless or mindless sort, such as a standard, directionless zombie or a ghost held back by regrets. It is also home to highly territorial spirits that attack living interlopers. It is unknown what happens to the living who die there, so it is typically not  recommended to attempt to visit. Unoffensive necromantic magic works much better in these zones, although healing and turning undead is weakened somewhat.<p>                           
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Shavarath</h2>
-                    <ul>
-                        <li>War</li>
-                        <li>Violence/Martial Prowess</li>
-                        <li>Siberys</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This plane is commonly associated with acts of war and violence. Manifest zones only develop in large-scale battlefields with combating Fiends and Angels 
-                        sometimes being spotting in these areas. It is a common superstition that
-                        weapons forged on battlegrounds are much deadlier, but they can become cursed or even sentient weapons. 
-                        While some weapons have been confirmed to be of better quality, it is difficult to corroborate if this 
-                        is the sole reason. Alongside Lamannia, it is also believed that a Barbarian gets their inhuman physical abilities
-                        from this plane. In general, weapons or otherwise physical attacking does greater damage, while non-damaging spells have a harder time 
-                        taking hold.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/rosie-fraser-1L71sPT5XKc-unsplash.jpg" alt="Mabar" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mabar</h5>
+                            <p class="card-text">Negative Energy</p>
+                            <p class="card-text">The Void</p>
+                            <p class="card-text">Darkness</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#mabarModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="mabarModal" tabindex="-1" role="dialog" aria-labelledby="mabarModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mabarModalLabel">Mabar: the Endless Night</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Tracking of this moon has proven difficult due to it always being in a darkened new state. Equally hard to keep track of is its manifest zones. All that is known about them is that they occur in extreme darkness and cause objects and sometimes people to disappear. This is rarer than it sounds, as most sources of light, including moonlight or even candlelight dispels this effect. Like Dolurrh, Mabar can cause undead phenomenon, but it always results in hostile, ravenous undead. Offensive necromancy and magic involving trickery work much better under its influence, but can also have unintended drawbacks or backlashes on the user.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Dolurrh</h2>
-                    <ul>
-                        <li>Positive and Negative Energy</li>
-                        <li>Life/Death/Salt</li>
-                        <li>Khyber</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        The land of the dead. Other than the very pious, it seems that all souls go here after expiring. Due to the rarity of people retaining their 'memory'
-                        during their death after being revived, there is not much information on the afterlife, but descriptions believed to be related to this moon are 
-                        relatively common. Souls of the recently deceased are seen aimlessly wandering around while strange dark shapes seem to stalk many of them. The world 
-                        resembles Eberron from descriptions, but in ruins and under an unnatural darkness. The only unique structure resembles a large castle or fortress that is always in the 
-                        distance. It is theorized that early contact with this plane lead to several religions with a more positive afterlife being developed. Those belonging 
-                        to these religions that have been revived either have no memory, or a near textbook description of that religion's version of 
-                        of the afterlife. Manifest zones tend to weaken healing magic, but strengthen revival magic, and those who die in its borders will always arise by the next day as some sort of undead.
-                        The zones tend not to be able to support life, with water becoming too salty, regardless of it location, and land dries out, becoming small salt plains.
-                        Karnnath is home to some of the few permanent zones, which is what enabled them to amass one of the most frightful armies in world history.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/max-langelott-oQBFbXY-3Z0-unsplash.jpg" alt="Xoriat" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Xoriat</h5>
+                            <p class="card-text">Psychic Energy</p>
+                            <p class="card-text">Life</p>
+                            <p class="card-text">Chaos</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#xoriatModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="xoriatModal" tabindex="-1" role="dialog" aria-labelledby="xoriatModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="xoriatModalLabel">Xoriat: the Living Madness</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Characterized by a strange, green glow, this moon often causes uneasiness to people who look at it for too long. It is the original home of the Daelkyr, strange, powerful beings who attacked Eberron millennia ago. It was during the war with the Daelkyr that a group of druids known as the Gatekeepers created numerous great sigils that sealed off Xoriat from the world. The moon still orbits, but whatever energies it is host to is inaccessible to the world and any manifest zones were 'locked' in place. These zones tend to generate a sense of unease and are remarkably easy to get lost in. Magic that affects fear and clouds judgement are more potent, as well as reducing resistancesto such effects. Psychic abilities and other forms of mental magic can also have unpredictable side effects.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Mabar</h2>
-                    <ul>
-                        <li>Negative Energy</li>
-                        <li>Darkness/Entropy/Void</li>
-                        <li>???</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        Tracking of this moon has proven difficult due to it always being in its new state. Sometimes, under the right alignment of moons and stars, you can see 
-                        a blank space moving across the sky, this is believed to be Mabar. Equally hard to keep track of is its manifest zones. All that is known about them is 
-                        that they occur in extreme darkness and cause objects and sometimes people to disappear. It is currently unknown where they go. This is rarer than it sounds
-                        as most sources of light, including moonlight or even candlelight dispels this effect. It greatly affects magic that changes sight and illusions, and 
-                        hinders dispelling or countering magic.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/angelo-pantazis-x_TcTTaHFsM-unsplash.jpg" alt="Dal Quor" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Dal Quor</h5>
+                            <p class="card-text">Psychic Energy</p>
+                            <p class="card-text">Dreams</p>
+                            <p class="card-text">Isolation</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#dalquorModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="dalquorModal" tabindex="-1" role="dialog" aria-labelledby="dalquorModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="dalquorModalLabel">Dal Quor: the World of Dreams</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A ring of asteroids that loops around much of the planet's system. It is believed to have once been a moon, but was destroyed by the Giants in an attempt to stop an invasion of nightmare creatures. This is difficult to prove or disprove due to the Giant's disappearance from the world shortly after this war. It is believed by some that the plane associated is a shared dreamscape amongst mortals. Some evidence has arisen for this, mostly regarding existence of the aforementioned nightmares, and through corroboration between those with psionic abilities. There are no known manifest zones and other than a link to psionic energy.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Xoriat</h2>
-                    <ul>
-                        <li>Psychic Energy</li>
-                        <li>Fear/Chaos</li>
-                        <li>???</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        This moon has no strong association with any of the Progenitor Dragons, and is unknown how or even when it was formed. Characterized
-                        by a strange, green glow, this moon often causes uneasiness to people who look at it for too long. It is believed to be the original 
-                        home of the Daelkyr, strange, powerful beings who attacked Eberron millennia ago. It was during the war with the Daelkyr that a group of 
-                        druids known as the Gatekeepers created numerous great sigils that sealed off Xoriat from the world. The moon still orbits, but whatever 
-                        energies it is host to is inaccessible to the world and any manifest zones were 'locked' in place. These zones tend to generate a sense of 
-                        unease and are remarkably easy to get lost in. Magic that affects fear and clouds judgement are more potent, as well as reducing resistances
-                        to such effects. Psychic abilities and other forms of mental magic can also have unpredictable side effects.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/jason-d-QvrVBfWajbo-unsplash.jpg" alt="Syberis Ring" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Syberis Ring</h5>
+                            <p class="card-text">Magic</p>
+                            <p class="card-text">Good</p>
+                            <p class="card-text">Light</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#syberisModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="syberisModal" tabindex="-1" role="dialog" aria-labelledby="syberisModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="syberisModalLabel">Syberis Ring: the Dragon Above</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>The ring of dragonshards surrounding Eberron is named after the Proginator Wyrm due to legend that it is actually the remains of his shattered body after his betrayal by Kyber. It is commonly believed, although difficult to prove or disprove, that the ring is the source of magic in the world. As of yet, meteors from the ring are the only way to obtain the rare shards, with only two attempts to reach that far have taken place.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-    
-                <h2>Dal Quor</h2>
-                    <ul>
-                        <li>Psychic Energy</li>
-                        <li>Dreams</li>
-                        <li>???</li>
-                    </ul>
-                <div class="infoBlock">
-                    <p>
-                        A ring of asteroids that loops around much of the planet's system. Believed to once have been a moon, but destroyed by the Giants in an attempt
-                        to stop an invasion of nightmare creatures. This is difficult to prove or disprove due to the Giant's disappearance from the world shortly after 
-                        this war. It is believed by some that the plane associated is a shared dreamscape amongst mortals. Some evidence has arisen for this, mostly 
-                        regarding existence of the aforementioned nightmares, and through corroboration between those with psionic abilities. There are no known manifest zones
-                        and other than a link to psionc energy, does not seem to affect magic.
-                    </p>
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Eberron" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Eberron</h5>
+                            <p class="card-text">Earth</p>
+                            <p class="card-text">Balance</p>
+                            <p class="card-text">Space</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#eberronModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="eberronModal" tabindex="-1" role="dialog" aria-labelledby="eberronModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eberronModalLabel">Eberron: the Dragon Between</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                               <p>The world itself. As of now, over 70% of the world has been explored and document, not including the precarious depths underground. Out of all the planetary bodies, Eberron seems to have a more or less equal  balance of planar energies, especially when compared to the moons. The conflicting aspects could be a reason behind Eberron's tumultuous history, but also enables is limitless potential.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <br>
-            </div> <!--main-->
+                <!--card-->
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card" style="width: 20rem">
+                    <img src="img/moons/jack-robinson--id1HKapEbc-unsplash.jpg" alt="Kyber" class="card-img-top img-height">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kyber</h5>
+                            <p class="card-text">Space</p>
+                            <p class="card-text">Evil</p>
+                            <p class="card-text">Isolation</p>
+                            <button type="button" class="btn btn-info" style="width: 100%"" data-toggle="modal" data-target="#kyberModal">More Info</button>
+                        </div><!--cbody-->
+                    </div><!--card-->
+                </div><!--col-->
+                <!--modal-->
+                <div class="modal" id="kyberModal" tabindex="-1" role="dialog" aria-labelledby="kyberModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="kyberModalLabel">Kyber: the Dragon Below</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Avenging her brother, Eberron coiled around the treacherous Wyrm and became the planet encasing the strange landscapes of Kyber. The vast systems of caverns and tunnels are noted for making little physical sense. What may be a several day trip over land could take mere hours through the right tunnel. Collosal caves can be found stretching beyond where the ground should actually be, and tunneling from above finds no purchace. In most cases, this region is left alone, also due to the belief that the demonic spawn of Kyber make their home here. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
         </section>
 
         <footer class="bg-light p-3 pt-5">
@@ -364,296 +587,3 @@
 </body>
 </html>
 
-
-
-       
-        <div class="info_li">
-
-            <h2>The Moons of Eberron</h2>
-            <div class="infoBlock">
-                <p>
-                    Similarly to baseline DnD, existence is made up of intersecting metaphysical planes. Unlike baseline,
-                    They do not cleanly line up with the four elements or alignments, or even deities. There are twelve
-                    moons believed to be physical projections of the planes that make up the universe with one  
-                    additional plane related to dreaming. In general, when using names, the moon and plane can be used interchangeably.
-                    It is currently unknown, aside from distant observation, what the moons are actually like, with only very little documentation
-                    of interplanar travel found left behind by the Giants. Everything known from modern sources
-                    come from observations on their orbits around Eberron, or their effects on Manifest Zones throughout 
-                    the world. 
-                </p><br>
-                <p>
-                    Manifest Zones are areas ranging between the size of a small village up to possibly the size of an entire continent 
-                    that are heavily affected by a particular moon. In general, their effects can ebb and flow with time, but some 
-                    appear to be permanent, or at the very least exhibit a low, constant effect. Somewhat related, the moons' position 
-                    in orbit and its lunar cycle can have effects similar to a manifest zone on a greater scale. Scientific study of these areas have 
-                    answered many questions about the nature of magic in the universe as well as expose some unsettling truths.
-                </p><br>
-                <p>
-                    The lunar cycles can also have a direct impact on the way some living beings are born. Some of the moons are 
-                    responsible for the planetouched races such as Genasi, Tieflings, and Aasimar, which tends to only affect that particular
-                    child, although sensitivity to particular moons seem to run in lineages. Although there are constellation in the sky,  it is the 
-                    moons that are used as a sort of zodiac system or for divination. In fact, very little is known about 
-                    the stars due to the overwhelming presence of twelve moons in comparison. Some myths state that each of the Progenitor Wyrms
-                    created these moons before joining to become the planet Eberron.
-                </p>
-            </div>
-                <br>
-
-            <h2>Siberys Ring</h2>
-            <div class="infoBlock">
-                <p>
-                    Not actually a moon, but it is the closest heavenly body to Eberron. Named after and in myth believed to be the 
-                    shattered remains of the dragon, Siberys. The ring is made from Siberys dragonshards, and is believed by 
-                    some to be the reason magic is even possible within the world to begin with.
-                </p>
-            </div>
-                <br>
-            
-            <h2>Irian</h2>
-                <ul>
-                    <li>Positive Energy</li>
-                    <li>Life/Light</li>
-                    <li>Siberys</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This moon functions as the setting's sun. By comparison it is much larger compared to the other moons,
-                    possibly close to the size of Eberron itself. It is the largest source of light for the world, but not heat.
-                    Very little is known about the moon itself even from Giant research. Its manifest zones are found most often 
-                    in Aundaire, The Eldeen Reaches and the Talentia Plains. Creatures born during its height are often perfectly 
-                    healthy and tend to be stronger than others of similar age, but that tends to wear out later in life. The ground
-                    is extremely fertile, and crops seem to grow much faster, sometimes allowing multiple harvests in a single season.
-                    Healing and restoration magic is also much stronger here, while necromancy tends to be less effective.
-                </p>
-            </div>
-                <br>
-
-            <h2>Fernia</h2>
-                <ul>
-                    <li>Fire</li>
-                    <li>Order/Summer</li>
-                    <li>Kyber</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This moon is the second brightest in the sky, functioning as a sort of second sun. Most heat in the world is geothermal, but 
-                    Fernia seems to also regulate
-                    it somewhat, with summer cycles being closely related to its orbit. Manifest zones typically result in deserts in the middle 
-                    of otherwise fertile fields. Some zones also have the strange effect of preventing creatures from lying, or dispelling illusions.
-                    From Giant documentation on the moon, it is believed that certain tribes of Devils and Angels living there are responsible for this
-                    more esoteric effect. Fire magic and magic relating to the truth or dispelling other magic works better, while magic related to 
-                    the cold or deceptions tends to fail more frequently.
-                </p>
-            </div>
-                <br>
-
-            <h2>Syrania</h2>
-                <ul>
-                    <li>Air</li>
-                    <li>Peace/Gravity</li>
-                    <li>Eberron</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    According to Giant texts, some travel took place to this plane ages ago. It is described as endless fields with constantly
-                    perfect weather, never reaching night, only twilight at its darkest. It is here that the floatwood trees used in 
-                    airship construction is harvested from originates. Manifest zones vary a bit compared to others, with one in Arenal
-                    being the only place in Eberron that allows floatwood growth, and the one where Sharn is located, altering the gravity, 
-                    enabling it be to be built as high as it is. Some smaller zones also house idyllic villages that seem to have avoided the worst effects
-                    of the Last War. Wind and air magic, alongside magic that effects gravity sees more potential and creatures have an easier time
-                    resisting magic that forces them to act against their will.
-                </p>
-            </div>
-                <br>
-
-            <h2>Risia</h2>
-                <ul>
-                    <li>Ice/Lightning</li>
-                    <li>Winter/Storms</li>
-                    <li>Kyber</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    Another plane that the Giants seem to have made some contact with. The land is mostly frozen and besieged in constantly raging
-                    storms. It is believed that the entire continent of Everice is a manifest zone of Risia and Stormhome is the result of a much smaller, weaker
-                    one. Watching its position in the sky in relation to Fernia and Syrania allows experts to fairly accuratly predict the weather and 
-                    how long or harsh a coming winter will be. Due to most manifest zones taking place over the ocean or on a inhospitable continent,
-                    it is not known what magic, other than cold, electric, and wind are effected. 
-                </p>
-            </div>
-                <br>
-
-            <h2>Thelanis</h2>
-                <ul>
-                    <li>Fey</li>
-                    <li>Seasons/Emotions</li>
-                    <li>Eberron</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    Manifest zones of this moon tend to occurs far from civilization, with druid sects only coming across them rarely. Large, sprawling forests 
-                    grow around these zones as well, making the directly affected zone even more difficult to locate. It is however known, that these forests 
-                    often act under the influence of their own weather and seasonal patterns, with each season sometimes lasting years on end. Some druids have 
-                    also reported heightened emotions and senses when nearing some of the smaller or temporary zones. Some myths tell of strange creatures native 
-                    to the plane who are the ones actually controlling the climate, but are notoriously fickle to deal with. Charms and enchantment magic work much better
-                    during the moon's zenith, while 'buffs' do not work as well.
-                </p>
-            </div>
-                <br>
-
-
-            <h2>Lamannia</h2>
-                <ul>
-                    <li>Lycanthropy</li>
-                    <li>Strenght/The Wild</li>
-                    <li>Eberron</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    Believed to be the source of lycanthropy, due to some Fey influences and the fact that it is in its full state far more often than the 
-                    other moons are. (Barring Irian, which is always 'full'.) These zones are rather hard to study, due to seemingly only appearing 
-                    far from civilization, with even the druids having difficulty finding them. It is believed that Lamannia gives barbarians some of their 
-                    supernatural ability alongside the moon Shavarath. Like Thelanis, study is primarily drawn from surrounding wilderness rather than directly.
-                    It is inferred from the moon's positions that Lammania makes magic that changes the body or senses work better and longer, and makes mind
-                    affecting magic struggle to take hold.
-                </p>
-            </div>
-                <br>
-
-            <h2>Daanvi</h2>
-                <ul>
-                    <li>Knowlege</li>
-                    <li>Magic/Innovation</li>
-                    <li>Siberys</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This is one of the few planes with very little information from the Giants, due mostly to its very long orbit, nearly 1000 years! It is 
-                    thought that each cycle has brought a new age of technology or a rise between different species. Of course, civilization still improves and changes 
-                    even without Daanvi's presence, but it also cannot be ignored that the greatest jumps are when it is near. It is also said that the dragonmarks
-                    first started appearing during one of Daanvi's zeniths. Its manifest zones are rather subtle compared to others, but in particular, ritual or 
-                    enchanting magic seems to gain the most effects. It is also theorized that a few 'null zones', where magic is largely unable to function,
-                    are a type of manifest zone of Daanvi.
-                </p>
-            </div>
-                <br>
-
-            <h2>Kythri</h2>
-                <ul>
-                    <li>Transmutation/Dimensional</li>
-                    <li>Change/Ooze</li>
-                    <li>Eberron</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This strange moon seems to have no orbit at all, either wildly flailing across the sky or sometimes appearing in a difference section of space 
-                    from night to night. It is because of this that it is believed that all magic involving transporting matter is energized by this particular moon.
-                    Manifest zones are also unstable, but in a much different way. Interestingly, through clever tracking procedures and some luck, researchers discovered
-                    that this moon is completely liquid, although the exact material is still unknown. The ground in its manifest zones are pliable by the sheer will of individuals within. This
-                    effect may have lead to the beginnings of transmutation magic. Thankfully, most of these zones are temporary and as of yet, has not happened in any 
-                    major population area. Transmutation and conjuration magic tend both act quicker and last longer under the effects of this moon. Dispelling and other 
-                    abjuration effects aren't quite as useful as normal. If a manifest zone appears near or even within another pre-existing zone, magic fluctuates wildly
-                    and is rather unpredictable. It should be noted that to date, no Kythri zone has interacted with a Daanvi zone.
-                </p>
-            </div>
-                <br>
-
-            <h2>Shavarath</h2>
-                <ul>
-                    <li>War</li>
-                    <li>Violence/Martial Prowess</li>
-                    <li>Siberys</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This plane is commonly associated with acts of war and violence. Manifest zones only develop in large-scale battlefields with combating Fiends and Angels 
-                    sometimes being spotting in these areas. It is a common superstition that
-                    weapons forged on battlegrounds are much deadlier, but they can become cursed or even sentient weapons. 
-                    While some weapons have been confirmed to be of better quality, it is difficult to corroborate if this 
-                    is the sole reason. Alongside Lamannia, it is also believed that a Barbarian gets their inhuman physical abilities
-                    from this plane. In general, weapons or otherwise physical attacking does greater damage, while non-damaging spells have a harder time 
-                    taking hold.
-                </p>
-            </div>
-                <br>
-
-            <h2>Dolurrh</h2>
-                <ul>
-                    <li>Positive and Negative Energy</li>
-                    <li>Life/Death/Salt</li>
-                    <li>Khyber</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    The land of the dead. Other than the very pious, it seems that all souls go here after expiring. Due to the rarity of people retaining their 'memory'
-                    during their death after being revived, there is not much information on the afterlife, but descriptions believed to be related to this moon are 
-                    relatively common. Souls of the recently deceased are seen aimlessly wandering around while strange dark shapes seem to stalk many of them. The world 
-                    resembles Eberron from descriptions, but in ruins and under an unnatural darkness. The only unique structure resembles a large castle or fortress that is always in the 
-                    distance. It is theorized that early contact with this plane lead to several religions with a more positive afterlife being developed. Those belonging 
-                    to these religions that have been revived either have no memory, or a near textbook description of that religion's version of 
-                    of the afterlife. Manifest zones tend to weaken healing magic, but strengthen revival magic, and those who die in its borders will always arise by the next day as some sort of undead.
-                    The zones tend not to be able to support life, with water becoming too salty, regardless of it location, and land dries out, becoming small salt plains.
-                    Karnnath is home to some of the few permanent zones, which is what enabled them to amass one of the most frightful armies in world history.
-                </p>
-            </div>
-                <br>
-
-            <h2>Mabar</h2>
-                <ul>
-                    <li>Negative Energy</li>
-                    <li>Darkness/Entropy/Void</li>
-                    <li>???</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    Tracking of this moon has proven difficult due to it always being in its new state. Sometimes, under the right alignment of moons and stars, you can see 
-                    a blank space moving across the sky, this is believed to be Mabar. Equally hard to keep track of is its manifest zones. All that is known about them is 
-                    that they occur in extreme darkness and cause objects and sometimes people to disappear. It is currently unknown where they go. This is rarer than it sounds
-                    as most sources of light, including moonlight or even candlelight dispels this effect. It greatly affects magic that changes sight and illusions, and 
-                    hinders dispelling or countering magic.
-                </p>
-            </div>
-                <br>
-
-            <h2>Xoriat</h2>
-                <ul>
-                    <li>Psychic Energy</li>
-                    <li>Fear/Chaos</li>
-                    <li>???</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    This moon has no strong association with any of the Progenitor Dragons, and is unknown how or even when it was formed. Characterized
-                    by a strange, green glow, this moon often causes uneasiness to people who look at it for too long. It is believed to be the original 
-                    home of the Daelkyr, strange, powerful beings who attacked Eberron millennia ago. It was during the war with the Daelkyr that a group of 
-                    druids known as the Gatekeepers created numerous great sigils that sealed off Xoriat from the world. The moon still orbits, but whatever 
-                    energies it is host to is inaccessible to the world and any manifest zones were 'locked' in place. These zones tend to generate a sense of 
-                    unease and are remarkably easy to get lost in. Magic that affects fear and clouds judgement are more potent, as well as reducing resistances
-                    to such effects. Psychic abilities and other forms of mental magic can also have unpredictable side effects.
-                </p>
-            </div>
-                <br>
-
-            <h2>Dal Quor</h2>
-                <ul>
-                    <li>Psychic Energy</li>
-                    <li>Dreams</li>
-                    <li>???</li>
-                </ul>
-            <div class="infoBlock">
-                <p>
-                    A ring of asteroids that loops around much of the planet's system. Believed to once have been a moon, but destroyed by the Giants in an attempt
-                    to stop an invasion of nightmare creatures. This is difficult to prove or disprove due to the Giant's disappearance from the world shortly after 
-                    this war. It is believed by some that the plane associated is a shared dreamscape amongst mortals. Some evidence has arisen for this, mostly 
-                    regarding existence of the aforementioned nightmares, and through corroboration between those with psionic abilities. There are no known manifest zones
-                    and other than a link to psionc energy, does not seem to affect magic.
-                </p>
-            </div>
-                <br>
-        </div> <!--main-->
-        
-        <footer id="bottom">
-            <span>Joel Gainey 2020 - all rights reserved Wizards of the Coast</span>
-        </footer>
-    </body>
-</html>

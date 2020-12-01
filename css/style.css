@@ -23,10 +23,9 @@ header {
     border-bottom: 3px solid lightblue;
 }
 
-.infoBlock,
-#h_main p {
+.infoBlock p {
     background: #222123;
-    width: 70%;
+    max-width: 70%;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 0 20px 20px 0;
@@ -78,6 +77,10 @@ aside h4 {
     display: inline-block;
 }
 
+ul.no-bullets {
+   list-style: none;
+}
+
 h2, h3, h4 {
     width: 20%;
     background: #222123;
@@ -94,8 +97,6 @@ p a {
     display: inline;
     color: blueviolet; 
 }
-
-s
 
 /* tables */
 
