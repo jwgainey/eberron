@@ -3,7 +3,7 @@ ul.no-bullets {
 }
 
 hr {
-    background-color: black;
+    background-color: #007bff;
     width:100%;
     height: 2px;
 }
@@ -18,6 +18,8 @@ hr {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
+
 
 /****** MEDIA QUERIES ***/
 @media (max-width: 564px) {
