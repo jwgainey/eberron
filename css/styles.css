@@ -3,7 +3,7 @@ ul.no-bullets {
 }
 
 hr {
-    background-color: #007bff;
+    background-color: silver;
     width:100%;
     height: 2px;
 }
@@ -19,8 +19,26 @@ hr {
     margin-right: 1.5rem;
 }
 
+#khorvaire, .h2, .h3 {
+    text-align: center;
+}
 
+section a {
+    color: lightblue;
+}
 
+section a:hover{
+    color: teal;
+}
+
+.info-block {
+    border: solid 2px silver;
+    border-radius: 5px;
+    border-top: 0;
+}
+.info-img {
+    width:40%;
+}
 /****** MEDIA QUERIES ***/
 @media (max-width: 564px) {
         #moonCards {
