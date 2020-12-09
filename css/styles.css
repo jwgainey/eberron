@@ -29,13 +29,15 @@ section a {
 
 section a:hover{
     color: teal;
+    text-emphasis: none;
+    text-decoration: none;
 }
 
 .info-block {
     border: solid 2px silver;
-    border-radius: 5px;
-    border-top: 0;
+    border-radius: 8px;
 }
+
 .info-img {
     width:40%;
 }
