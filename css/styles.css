@@ -38,8 +38,52 @@ section a:hover{
     border-radius: 8px;
 }
 
-.info-img {
-    width:40%;
+#myths .info-img {
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.img-square {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.img-req {
+    height:100px;
+    width: 80px;
+    display: flex;
+    margin:auto;
+    margin-top: 10%;
+}
+
+.img-long {
+    height: 80px;
+    width: 120px;
+    display: flex;
+    margin:auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.img-shadow {
+    height: 100px;
+    width: 200px;
+    display: flex;
+    margin:auto;
+    margin-top: 10%;
+}
+
+.img-krak {
+    height: 100px;
+    width: 60px;
+    display: flex;
+    margin:auto;
+    margin-top: 10%;
 }
 
 /****** MEDIA QUERIES ***/
