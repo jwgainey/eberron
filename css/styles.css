@@ -44,27 +44,25 @@ section a:hover{
     margin: auto;
 }
 
+
+#houses img {
+    display: flex;
+    margin:auto; 
+    margin-top: 1rem;
+}
 .img-square {
     height: 10rem;
     width: 10rem;
-    display: flex;
-    margin: auto;
-    margin-top: 1rem;
 }
 
 .img-req {
     height:10rem;
     width: 8rem;
-    display: flex;
-    margin:auto;
-    margin-top: 1rem;
 }
 
 .img-long {
-    height: 8rem;
-    width: 10rem;
-    display: flex;
-    margin:auto;
+    height: 10rem;
+    width: 12rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -72,25 +70,21 @@ section a:hover{
 .img-shadow {
     height: 100px;
     width: 200px;
-    display: flex;
-    margin:auto;
     margin-top: 1rem;
 }
 
 .img-krak {
     height: 10rem;
     width: 5rem;
-    display: flex;
-    margin:auto;
     margin-top: 1rem;
 }
 
 /****** MEDIA QUERIES ***/
 @media (max-width: 564px) {
-    #moonCards {
+    #moonCards  {
         display: flex;
-        justify-content: center;
-        margin-left: 8%;
+        justify-content: space-around;
+        margin-left: 5%;
     }
 }
 
@@ -98,6 +92,6 @@ section a:hover{
     #moonCards {
         display: flex;
         justify-content: center;
-        margin-left: 20%;
+        margin-left: 12%;
     }
 }
