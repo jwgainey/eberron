@@ -27,16 +27,23 @@ section a {
     color: lightblue;
 }
 
-section a:hover{
+section a:hover {
     color: teal;
     text-emphasis: none;
     text-decoration: none;
 }
 
+footer a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+
 .info-block {
     border: solid 2px silver;
     border-radius: 8px;
 }
+
 
 #myths .info-img {
     height: 300px;
