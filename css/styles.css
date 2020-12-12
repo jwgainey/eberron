@@ -127,9 +127,10 @@ footer a:hover {
     .info-block {
         flex: 0 1 calc(25% - 1em);
     }
-    .card {
+    #houses .card {
         margin-left: 4rem;
     }
+
 }
 
 @media (max-width: 766px) {
