@@ -1,7 +1,6 @@
 /*** general styling ***/
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -18,6 +17,7 @@ hr {
 .info-block {
     border: solid 2px silver;
     border-radius: 8px;
+    display: flex;
 }
 
 /**** Cards ****/
@@ -94,11 +94,41 @@ footer a:hover {
 
 /****** MEDIA QUERIES ***/
 
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .info-block {
+        width: 95%;
+    }
+    .card {
+        width: 95%;
+    }
+}
+
 @media (max-width: 564px) {
     #moonCards  {
         display: flex;
         justify-content: space-around;
         margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 40em) {
+    .info-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+ 
+    .info-block {
+        flex: 0 1 calc(25% - 1em);
+    }
+    .card {
+        margin-left: 4rem;
     }
 }
 
