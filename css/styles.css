@@ -1,3 +1,10 @@
+/*** general styling ***/
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 ul.no-bullets {
     list-style: none;
 }
@@ -7,6 +14,13 @@ hr {
     width:100%;
     height: 2px;
 }
+
+.info-block {
+    border: solid 2px silver;
+    border-radius: 8px;
+}
+
+/**** Cards ****/
 .row.equal-height > [class*='col-'] {
     display: flex;
 }
@@ -19,10 +33,7 @@ hr {
     margin-right: 1.5rem;
 }
 
-#khorvaire, .h2, .h3 {
-    text-align: center;
-}
-
+/*** links ***/
 section a {
     color: lightblue;
 }
@@ -39,12 +50,7 @@ footer a:hover {
 }
 
 
-.info-block {
-    border: solid 2px silver;
-    border-radius: 8px;
-}
-
-
+/*** images ***/
 #myths .info-img {
     height: 300px;
     width: 300px;
