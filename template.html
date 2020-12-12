@@ -14,6 +14,7 @@
             <div class="container-fluid">
                 <!-- <a href="index.html" class="navbar-brand text-uppercase d-md-none">
                 </a> -->
+                <h1 id="smTitle" class="text-center">Eberron Campaign</h1>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav text-uppercase mx-auto">
@@ -23,8 +24,18 @@
                         <li class="nav-item">
                             <a href="setting.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">Campaign Setting</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="world.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3">World of Eberron</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="worldDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                World of Eberron
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="worldDropdown">
+                                <h6 class="dropdown-item disabled aw-line-height" href="#">World of Eberron</h6>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="world.html">World</a>
+                                <a class="dropdown-item" href="galifar.html">Five Nations</a>
+                                <a class="dropdown-item" href="khorvaire.html">Khorvaire</a>
+                                <a class="dropdown-item" href="beyond_khorvaire.html">Beyond Khorvaire</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a href="moon.html" class="nav-link mx-md-1 mx-lg-2 mx-xl-3 active">Moons &amp; Planes<span class="sr-only"(current)></span></a>
@@ -49,10 +60,10 @@
         <footer class="bg-dark text-light p-3 pt-5">
             <ul class="list-inline text-uppercase text-center">
                 <li class="list-inline-item mx-3">
-                    <a href="#" class=" disabled">Spell Damage</a>
+                    <a href="" class=" disabled">Spell Damage</a>
                 </li>
                 <li class="list-inline-item mx-3">
-                    <a href="#" class=" disabled">Character Sheet</a>
+                    <a href="" class=" disabled">Character Sheet</a>
                 </li>
                 <li class="list-inline-item mx-3">
                     <a href="history.html">World History</a>

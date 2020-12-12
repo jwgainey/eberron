@@ -87,6 +87,7 @@ footer a:hover {
 }
 
 /****** MEDIA QUERIES ***/
+
 @media (max-width: 564px) {
     #moonCards  {
         display: flex;
@@ -100,5 +101,15 @@ footer a:hover {
         display: flex;
         justify-content: center;
         margin-left: 12%;
+    }
+}
+
+@media (min-width: 770px) {
+    #navbar {
+        display: flex;
+        float: right;
+    }
+    #smTitle {
+        display: none;
     }
 }
