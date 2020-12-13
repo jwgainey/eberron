@@ -74,8 +74,8 @@ footer a:hover {
 }
 
 .img-long {
-    height: 10rem;
-    width: 12rem;
+    height: 8rem;
+    width: 11rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
@@ -117,7 +117,7 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 360px) {
     .info-block {
         display: flex;
         flex-wrap: wrap;
@@ -148,5 +148,12 @@ footer a:hover {
     }
     #smTitle {
         display: none;
+    }
+}
+
+@media (min-width: 1235px) {
+    #worldButton {
+        display: flex;
+        flex: wrap;
     }
 }
