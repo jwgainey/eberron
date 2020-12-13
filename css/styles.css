@@ -17,7 +17,6 @@ hr {
 .info-block {
     border: solid 2px silver;
     border-radius: 8px;
-    display: flex;
 }
 
 /**** Cards ****/
@@ -52,9 +51,7 @@ footer a:hover {
 
 /*** images ***/
 #myths .info-img {
-    height: 300px;
-    width: 300px;
-    margin: auto;
+    display: flex;
 }
 
 
@@ -75,14 +72,14 @@ footer a:hover {
 
 .img-long {
     height: 8rem;
-    width: 11rem;
+    width: 95%;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
 
 .img-shadow {
     height: 100px;
-    width: 200px;
+    width: 95%;
     margin-top: 1rem;
 }
 
@@ -93,6 +90,38 @@ footer a:hover {
 }
 
 /****** MEDIA QUERIES ***/
+@media (max-width: 375px) {
+    
+    h1 {
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-size: .95rem;
+    }
+    p,li{
+        font-size: .75rem;
+    }
+    
+    .info-block {
+        margin-left: 2px;
+    }
+}
+
+@media (max-width: 411px) {
+    h3 {
+        font-size: 1.5rem;
+    }  
+}
+@media (min-width: 330px) and (max-width: 429px) {
+    #smTitle {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 430px) and (max-width: 515px) {
+    #smTitle {
+        font-size: 2rem;
+    }
+}
 
 @media (max-width: 500px) {
     h1 {
@@ -109,51 +138,10 @@ footer a:hover {
     }
 }
 
-@media (max-width: 564px) {
-    #moonCards  {
-        display: flex;
-        justify-content: space-around;
-        margin-left: 5%;
-    }
-}
+@media (min-width: 768px) {
 
-@media screen and (min-width: 360px) {
-    .info-block {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
- 
-    .info-block {
-        flex: 0 1 calc(25% - 1em);
-    }
-    #houses .card {
-        margin-left: 4rem;
-    }
-
-}
-
-@media (max-width: 766px) {
-    #moonCards {
-        display: flex;
-        justify-content: center;
-        margin-left: 12%;
-    }
-}
-
-@media (min-width: 770px) {
-    #navbar {
-        display: flex;
-        float: right;
-    }
     #smTitle {
         display: none;
     }
 }
 
-@media (min-width: 1235px) {
-    #worldButton {
-        display: flex;
-        flex: wrap;
-    }
-}
