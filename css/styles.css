@@ -4,6 +4,10 @@ h1 {
     text-transform: uppercase;
 }
 
+nav {
+    background-color: #0e181c;
+}
+
 ul.no-bullets {
     list-style: none;
 }
@@ -12,11 +16,21 @@ hr {
     background-color: silver;
     width:100%;
     height: 2px;
+    margin-top: 0px;
+    box-shadow: 0px 5px 5px  #0B0D0E; 
 }
 
 .info-block {
     border: solid 2px silver;
     border-radius: 8px;
+    margin-bottom: 3em;
+    padding: 3em;
+    box-shadow:0px 10px 10px #0B0D0E;
+}
+
+table {
+    display: flex;
+    margin: auto;
 }
 
 /**** Cards ****/
@@ -51,7 +65,10 @@ footer a:hover {
 
 /*** images ***/
 #myths .info-img {
+    height:20rem;
+    width: 20rem;
     display: flex;
+    margin: auto;
 }
 
 
@@ -72,14 +89,14 @@ footer a:hover {
 
 .img-long {
     height: 8rem;
-    width: 95%;
+    width: 10rem;
     margin-top: 1.5rem;
     margin-bottom: 3rem;
 }
 
 .img-shadow {
     height: 100px;
-    width: 95%;
+    max-width: 15rem;
     margin-top: 1rem;
 }
 
@@ -87,6 +104,14 @@ footer a:hover {
     height: 10rem;
     width: 5rem;
     margin-top: 1rem;
+}
+
+/****** Buttons ******/
+button {
+    border: solid 1px silver;
+}
+button:active{
+    box-shadow: inset 0px 2px 15px #1993b6;
 }
 
 /****** MEDIA QUERIES ***/
