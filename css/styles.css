@@ -71,6 +71,25 @@ footer a:hover {
     margin: auto;
 }
 
+.thumbnail {
+    display: flex;
+    width: 3rem;
+    height: auto;
+    margin: auto;
+}
+
+.blowup {
+    display:none;
+    position: absolute;
+}
+
+.blowup:hover{
+    height:20rem;
+    width: 20rem;
+    display: flex;
+    margin: auto;
+}
+}
 
 #houses img {
     display: flex;
