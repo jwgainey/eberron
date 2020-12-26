@@ -1,15 +1,23 @@
-/*** general styling ***/
-h1 {
+/*** GENERAL STYLES ***/
+h1, h2, h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif ;
     text-transform: uppercase;
-}
+    }
 
-nav {
-    background-color: #0e181c;
+section {
+    width:95%;
+    margin: auto;
 }
 
 ul.no-bullets {
     list-style: none;
+    }
+
+#smTitle {
+    font-size: 1.5rem;
+    margin-top: .75rem;
+    color: silver;
+    text-transform: uppercase;
 }
 
 hr {
@@ -17,175 +25,119 @@ hr {
     width:100%;
     height: 2px;
     margin-top: 0px;
-    box-shadow: 0px 5px 5px  #0B0D0E; 
+    box-shadow: 0px 2px 3px #20272b;
+}
+
+p {
+    text-indent: .75rem;
 }
 
 .info-block {
-    border: solid 2px silver;
+    border: solid 1px silver;
     border-radius: 8px;
-    margin-bottom: 3em;
-    padding: 3em;
-    box-shadow:0px 10px 10px #0B0D0E;
-}
-
-table {
-    display: flex;
-    margin: auto;
-}
-
-/**** Cards ****/
-.row.equal-height > [class*='col-'] {
-    display: flex;
-}
-
-.img-height {
-    height: 10rem;
-}
-#moons {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow:0px 2px 3px #20272b;
 }
 
 /*** links ***/
 section a {
     color: lightblue;
-}
-
-section a:hover {
+    }
+    
+    section a:hover {
     color: teal;
     text-emphasis: none;
     text-decoration: none;
-}
-
-footer a:hover {
+    }
+    
+    footer a:hover {
     color: grey;
     text-decoration: none;
+    }
+
+/**** Cards ****/
+.row.equal-height > [class*='col-'] {
+    display: flex;
+}
+.img-height {
+    height: 10rem;
+    }
+
+.card ul {
+    text-align: left;
 }
 
+/*** SECTION-SPECIFIC***/
 
-/*** images ***/
+.side-list {
+    text-indent: 2rem;
+}
+
+#moonCards, #houseCards {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+#houses img {
+    display: flex;
+    margin:auto;
+    margin-top: 1rem;
+    }
+
+.img-krak {
+    height: 20rem;
+    width: 11rem;
+    margin:auto;
+    margin-top: 1rem;
+}
+
+table {
+    display: flex;
+    margin: auto;
+    }
+
+/***IMAGES***/
 #myths .info-img {
     height:20rem;
     width: 20rem;
     display: flex;
     margin: auto;
-}
-
-.thumbnail {
-    display: flex;
-    width: 3rem;
-    height: auto;
-    margin: auto;
-}
-
-.blowup {
-    display:none;
-    position: absolute;
-}
-
-.blowup:hover{
-    height:20rem;
-    width: 20rem;
-    display: flex;
-    margin: auto;
-}
-}
-
-#houses img {
-    display: flex;
-    margin:auto; 
-    margin-top: 1rem;
-}
-.img-square {
-    height: 10rem;
-    width: 10rem;
-}
-
-.img-req {
-    height:10rem;
-    width: 8rem;
-}
-
-.img-long {
-    height: 8rem;
-    width: 10rem;
-    margin-top: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.img-shadow {
-    height: 100px;
-    max-width: 15rem;
-    margin-top: 1rem;
-}
-
-.img-krak {
-    height: 10rem;
-    width: 5rem;
-    margin-top: 1rem;
-}
-
-/****** Buttons ******/
-button {
-    border: solid 1px silver;
-}
-button:active{
-    box-shadow: inset 0px 2px 15px #1993b6;
-}
-
-/****** MEDIA QUERIES ***/
-@media (max-width: 375px) {
-    
-    h1 {
-        font-size: 1.2rem;
+    padding: auto;
     }
-    h3 {
-        font-size: .95rem;
-    }
-    p,li{
-        font-size: .75rem;
-    }
-    
-    .info-block {
-        margin-left: 2px;
-    }
-}
 
-@media (max-width: 411px) {
-    h3 {
-        font-size: 1.5rem;
-    }  
-}
-@media (min-width: 330px) and (max-width: 429px) {
-    #smTitle {
-        font-size: 1.2rem;
-    }
-}
-@media (min-width: 430px) and (max-width: 515px) {
-    #smTitle {
-        font-size: 2rem;
-    }
-}
+    .thumbnail {
+        display: flex;
+        width: 3rem;
+        height: auto;
+        margin: auto;
+        }
+        .blowup {
+            display:none;
+            position: absolute;
+            }
+            
+            .blowup:hover{
+            height:20rem;
+            width: 20rem;
+            display: flex;
+            margin: auto;
+            }
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 2rem;
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    .info-block {
-        width: 95%;
-    }
-    .card {
-        width: 95%;
-    }
-}
+/*** MEDIA QUERIES ***/
 
-@media (min-width: 768px) {
-
+/*** ~medium ***/
+@media screen and (min-width: 775px) {
     #smTitle {
         display: none;
     }
-}
 
+    section {
+        width: 90%;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    
+    }
+}
