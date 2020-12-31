@@ -68,6 +68,10 @@ section a {
     text-align: left;
 }
 
+.modal-body {
+    color:gray;
+}
+
 /*** SECTION-SPECIFIC***/
 
 .side-list {
